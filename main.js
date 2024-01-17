@@ -2,9 +2,9 @@ import './style.css'
 import 'alpinejs'
 
 document.querySelector('#app').innerHTML = `
-  <div class="container m-auto bg-white max-w-7xl	">
+  <div class="m-auto bg-white">
     <div x-data="{ menuOpen: false }">
-      <header class="z-50 top-0 inset-x-0	absolute max-w-7xl m-auto">
+      <header class="z-50 top-0 inset-x-0	absolute">
         <nav class="lg:px-8 p-6 justify-between items-center flex ">
           <div class="lg:flex-1 flex">
             <a href="#" class="p-1.5 -m-1.5 decoration-inherit">
@@ -64,6 +64,9 @@ document.querySelector('#app').innerHTML = `
     <main>
       <div class="sm:pb-20 pt-14 pb-16 bg-gray-900 overflow-hidden isolate relative">
         <img src="./img/Banner.jpg" class="object-cover w-full h-full -z-10 inset-0 absolute" alt="">
+        <div class="sm:-top-80 blur-3xl filter overflow-hidden trans -z-10 -top-40 inset-x-0 absolute" aria-hidden="true">
+          <div class="bze bte opacity-20 bg-gradient-to-tr to-purple-600 from-pink-500 xa vf su mi relative cw" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%);"></div>
+        </div>
         <div class="lg:px-8 px-6 max-w-7xl mx-auto">
           <div class="lg:py-56 sm:py-48 max-w-2xl mx-auto">
             <div class="sm:justify-center sm:flex sm:mb-8 hidden">
@@ -92,6 +95,9 @@ document.querySelector('#app').innerHTML = `
             <img class="lg:col-span-1 object-contain w-full col-span-2 max-h-12 sm:col-start-2" src="https://tailwindui.com/img/logos/158x48/savvycal-logo-white.svg" alt="SavvyCal" width="158" height="48">
             <img class="lg:col-span-1 object-contain w-full col-span-2 max-h-12 sm:col-start-auto col-start-2" src="https://tailwindui.com/img/logos/158x48/statamic-logo-white.svg" alt="Statamic" width="158" height="48">
           </div>
+        </div>
+        <div class="absolute inset-x-0 dz -z-10 trans overflow-hidden blur-3xl filter btr" aria-hidden="true">
+          <div class="relative cv mi su vf bg-gradient-to-tr to-purple-600 from-pink-500 opacity-20 btc bze" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%);"></div>
         </div>
       </div>
 
@@ -253,7 +259,7 @@ document.querySelector('#app').innerHTML = `
           <div class="max-w-4xl mx-auto">
             <h2 class="text-gray-900 tracking-tight font-bold text-2xl">Frequently asked questions</h2>
             <div>
-              <dl class="mt-10 border border-gray-900 border-opacity-10 pt-6" style="border-left: 0px; border-right: 0px; border-bottom: 0;">
+              <dl class="mt-10 border border-gray-900 border-opacity-10 pt-6 border-b-0 border-l-0 border-r-0">
                 <div x-data="{ isAddIcon: true }" class="pt-6">
                   <button @click="isAddIcon = !isAddIcon" class="flex justify-between	text-gray-900	items-center items-start	w-full">
                     <span class="leading-7 text-base font-semibold">What's the best thing about Switzerland?</span>
@@ -268,7 +274,7 @@ document.querySelector('#app').innerHTML = `
                   </dd>
                 </div>
               </dl>
-              <dl class="mt-10 border border-gray-900 border-opacity-10 pt-6" style="border-left: 0px; border-right: 0px; border-bottom: 0;">
+              <dl class="mt-10 border border-gray-900 border-opacity-10 pt-6 border-b-0 border-l-0 border-r-0">
                 <div x-data="{ isAddIcon: true }" class="pt-6">
                   <button @click="isAddIcon = !isAddIcon" class="flex justify-between	text-gray-900	items-center items-start	w-full">
                     <span class="leading-7 text-base font-semibold">How do you make holy water?</span>
@@ -283,7 +289,7 @@ document.querySelector('#app').innerHTML = `
                   </dd>
                 </div>
               </dl>
-              <dl class="mt-10 border border-gray-900 border-opacity-10 pt-6" style="border-left: 0px; border-right: 0px; border-bottom: 0;">
+              <dl class="mt-10 border border-gray-900 border-opacity-10 pt-6 border-b-0 border-l-0 border-r-0">
                 <div x-data="{ isAddIcon: true }" class="pt-6">
                   <button @click="isAddIcon = !isAddIcon" class="flex justify-between	text-gray-900	items-center items-start	w-full">
                     <span class="leading-7 text-base font-semibold">What do you call someone with no body and no nose?</span>
@@ -298,7 +304,7 @@ document.querySelector('#app').innerHTML = `
                   </dd>
                 </div>
               </dl>
-              <dl class="mt-10 border border-gray-900 border-opacity-10 pt-6" style="border-left: 0px; border-right: 0px; border-bottom: 0;">
+              <dl class="mt-10 border border-gray-900 border-opacity-10 pt-6 border-b-0 border-l-0 border-r-0">
                 <div x-data="{ isAddIcon: true }" class="pt-6">
                   <button @click="isAddIcon = !isAddIcon" class="flex justify-between	text-gray-900	items-center items-start	w-full">
                     <span class="leading-7 text-base font-semibold">Why do you never see elephants hiding in trees?</span>
@@ -313,7 +319,7 @@ document.querySelector('#app').innerHTML = `
                   </dd>
                 </div>
               </dl>
-              <dl class="mt-10 border border-gray-900 border-opacity-10 pt-6" style="border-left: 0px; border-right: 0px; border-bottom: 0;">
+              <dl class="mt-10 border border-gray-900 border-opacity-10 pt-6 border-b-0 border-l-0 border-r-0">
                 <div x-data="{ isAddIcon: true }" class="pt-6">
                   <button @click="isAddIcon = !isAddIcon" class="flex justify-between	text-gray-900	items-center items-start	w-full">
                     <span class="leading-7 text-base font-semibold">Why can't you hear a pterodactyl go to the bathroom?</span>
@@ -328,7 +334,7 @@ document.querySelector('#app').innerHTML = `
                   </dd>
                 </div>
               </dl>
-              <dl class="mt-10 border border-gray-900 border-opacity-10 pt-6" style="border-left: 0px; border-right: 0px; border-bottom: 0;">
+              <dl class="mt-10 border border-gray-900 border-opacity-10 pt-6 border-b-0 border-l-0 border-r-0">
                 <div x-data="{ isAddIcon: true }" class="pt-6">
                   <button @click="isAddIcon = !isAddIcon" class="flex justify-between	text-gray-900	items-center items-start	w-full">
                     <span class="leading-7 text-base font-semibold">Why did the invisible man turn down the job offer?</span>
